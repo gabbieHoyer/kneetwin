@@ -13,7 +13,7 @@
   h2 { font-size: 1.15rem; border-bottom: 1px solid #ddd; padding-bottom: .2rem;
        margin-top: 2rem; }
   .placeholder { color: #777; font-style: italic; }
-  video { width: 100%; margin-top: .5rem; }
+  video { width: 100%; height: auto; margin-top: .5rem; }
   a { color: #14507a; }
   .note { font-size: .9rem; color: #555; margin-top: 2.5rem;
           border-top: 1px solid #ddd; padding-top: .75rem; }
@@ -48,12 +48,12 @@ This property is essential for trustworthy counterfactual simulation. All result
 use hardened, leakage-controlled evaluation.</p>
 
 <h2>Interface video</h2>
-<video controls src="assets/interface_demo.mp4"></video>
-<p>Supplementary animation of the simulation mechanism: population-mean qMRI
-biomarker state, bone-shape / cartilage-thickness / cartilage-T2 principal
-components at &plusmn;3 SD, and the model-driven OA counterfactual shown as
-predicted natural-history progression beside a protective perturbation at
-+1 SD. Rendered offline; not a screen capture of the research interface.</p>
+<video controls preload="metadata" playsinline width="1920" height="1200"
+       poster="assets/video/kneetwin_explorer_walkthrough_poster.jpg">
+  <source src="assets/video/kneetwin_explorer_walkthrough.mp4" type="video/mp4">
+  <track kind="captions" srclang="en" label="English" src="assets/video/kneetwin_explorer_walkthrough.vtt">
+</video>
+<p>Walkthrough of the Knee-OA Digital Twin Explorer (1:44, captions burned in): the Explore, Predict and Population panels. The interface describes model behavior and is not a clinical predictor. Rendered frame by frame from the interface at v0.4-director.</p>
 
 <h2>Interactive demo</h2>
 <p class="placeholder">A web build of the research interface is planned.</p>

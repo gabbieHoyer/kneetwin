@@ -1,0 +1,77 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.400
+The Knee-OA Digital Twin Explorer: an interactive view into a digital twin of knee osteoarthritis, built from MRI.
+
+2
+00:00:03.500 --> 00:00:07.400
+It shows what the model sees, and what the model does when one input is shifted. One 3D shape model for each tissue: femur, tibia, patella and the two menisci.
+
+3
+00:00:07.500 --> 00:00:14.300
+Clicking a thumbnail switches the tissue in the main view; the thumbnails show the other tissues at the same setting.
+
+4
+00:00:14.600 --> 00:00:21.400
+Three kinds of biomarker on the femur: cartilage T2, cartilage thickness and bone shape. Each is summarized by ten principal components.
+
+5
+00:00:21.700 --> 00:00:28.100
+Moving the slider sweeps component 7 of femur cartilage T2 from −3 to +3 standard deviations. This is the pattern itself, drawn directly; no model is run.
+
+6
+00:00:28.200 --> 00:00:30.200
+The slider settles at +1 SD, the size of shift the paper's results are stated for.
+
+7
+00:00:30.500 --> 00:00:38.400
+The same sweep for cartilage thickness, component 7. Color is thickness in millimeters on the bone surface.
+
+8
+00:00:38.700 --> 00:00:46.600
+Medial meniscus shape, component 7. A shape component moves the surface itself; ±3 SD spans most of the variation seen in the cohort.
+
+9
+00:00:46.900 --> 00:00:50.300
+The Predict panel: femur cartilage T2 component 7 becomes the what-if. The shift snaps to −1, −0.5, 0, +0.5 or +1 SD; there are no in-between values.
+
+10
+00:00:50.400 --> 00:00:55.800
+The curve is cumulative risk over six model steps: the unshifted twin (reference) against the shifted one (counterfactual). The difference at the end updates with each shift.
+
+11
+00:00:55.900 --> 00:00:58.700
+Each scenario is the average over 150 held-out subjects, from one trained model.
+
+12
+00:00:59.000 --> 00:01:04.400
+The scrubber walks through the six steps. The shift is re-applied at every step, and the surface shows counterfactual minus reference.
+
+13
+00:01:04.500 --> 00:01:11.900
+Difference, geometry and color map: three views of the same step. These are model steps, not calendar time.
+
+14
+00:01:12.000 --> 00:01:15.300
+Back to Explore; the chosen what-if stays selected.
+
+15
+00:01:15.600 --> 00:01:22.000
+The second what-if available in Predict: femur cartilage thickness, component 2, with the same shifts and the same six steps.
+
+16
+00:01:22.100 --> 00:01:27.400
+The interface shows how the model behaves. It is not a clinical predictor.
+
+17
+00:01:27.700 --> 00:01:32.100
+The Population panel: the average shape of the stable-control and OA-incidence cohorts, as observed. This describes the data; it does not predict.
+
+18
+00:01:32.200 --> 00:01:38.000
+All three cohorts side by side. The difference panel uses one shared color scale, so differences are comparable.
+
+19
+00:01:38.100 --> 00:01:43.600
+Control minus the replacement cohort. Replacement reflects baseline severity, a different signal from incident OA, and is kept separate.
